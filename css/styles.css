@@ -1,0 +1,234 @@
+/* @font-face kits by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {font-family:"Hero";src:url("../fonts/Hero.eot?") format("eot"),url("../fonts/Hero.woff") format("woff"),url("../fonts/Hero.ttf") format("truetype"),url("../fonts/Hero.svg#Hero") format("svg");font-weight:normal;font-style:normal;}
+@font-face {font-family:"Hero-Light";src:url("../fonts/Hero_Light.eot?") format("eot"),url("../fonts/Hero_Light.woff") format("woff"),url("../fonts/Hero_Light.ttf") format("truetype"),url("../fonts/Hero_Light.svg#Hero-Light") format("svg");font-weight:normal;font-style:normal;}
+
+
+header {
+  padding: 20px;
+  position: relative;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: #12B3C5; //turquoise
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Hero';
+  font-size: 18px;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #0E98A7;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #0E98A7;
+  color: #fff;
+}
+
+.navbar .dropdown-menu {
+  z-index: 5000;
+}
+
+.navbar .navbar-form {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.navbar input.search-input {
+  background-color: #0E98A7;
+  border: 0;
+}
+.navbar input::placeholder {
+  #fff;
+}
+.btn-primary {
+  background-color: #046671;
+  color: #e2e2e2;
+  border: 1px solid #046671;
+  border-radius: 0;
+
+}
+
+.btn-primary:hover {
+  background-color: #046671;
+  color: #fff;
+}
+
+html, body {
+  padding: 0;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Hero-Light', sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: 'Hero', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+  height: calc(100% - 140px - 62px);
+}
+
+.col-sm-5, #map {
+  padding: 0;
+  height: 100%;
+}
+
+.col-sm-7, #search-results {
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+}
+
+#search-results {
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+
+/* Mega Menu */
+
+.menu-large {
+    position: static !important;
+}
+.megamenu{
+    padding: 20px 0px;
+    width:100%;
+}
+.megamenu> li > ul {
+    padding: 0;
+    margin: 0;
+}
+.megamenu> li > ul > li {
+    list-style: none;
+}
+.megamenu> li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: normal;
+}
+.megamenu> li ul > li > a:hover,
+.megamenu> li ul > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    color: #999999;
+}
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    cursor: not-allowed;
+}
+.megamenu.dropdown-header {
+    color: #428bca;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .megamenu{
+        margin-left: 0 ;
+        margin-right: 0 ;
+    }
+    .megamenu> li {
+        margin-bottom: 30px;
+    }
+    .megamenu> li:last-child {
+        margin-bottom: 0;
+    }
+    .megamenu.dropdown-header {
+        padding: 3px 15px !important;
+
+    }
+    .navbar-nav .open .dropdown-menu .dropdown-header{
+        color:#fff;
+    }
+}
+
+
+/*
+ * Dropdown on hover 
+ */
+
+@media (min-width:480px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+}
+
+.welcome {
+  font-size: 28px;
+  color: #4A4A4A;
+}
+
+.welcome-topics {
+  font-size: 22px;
+  color: #E1BB32;
+}
+
+.nav-primary {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #8FC54A;
+  border-bottom-left-radius: 2em;
+  min-height: 40px;
+  min-width: 400px;
+}
+
+.nav-primary a {
+  display: inline-block;
+  background-color: inherit;
+  color: #fff;
+  padding: 10px 40px 8px 0;
+  font-family: 'Hero-Light';
+  font-size: 16px;
+}
+
+.nav-primary a:hover {
+  color: #fff;
+}
+
+.nav-secondary {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-secondary a {
+  display: inline-block;
+  background-color: inherit;
+  color: #5C626D;
+  padding: 10px 30px 12px 0;
+  font-size: 13px;
+}
+
